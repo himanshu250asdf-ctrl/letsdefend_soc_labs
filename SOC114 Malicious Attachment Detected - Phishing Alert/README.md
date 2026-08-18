@@ -15,7 +15,7 @@
 
 ### Summary
 
-This investigation started with an alert. The alert type was a phishing email reported after recieved by a user with an attachment.I analyzed the sender information and attachment to determine whether the email was malicious. Based on the evidence, the email was confirmed to be malicious and contained a malicious code.
+This investigation started with an alert. The alert type exchange -phishing email reported after recieved by a user with an attachment. I analyzed the sender information and attachment to determine whether the email was phishing or not. Based on the evidence, the email was confirmed to be malicious and contained a malicious code.
 
 
 ### E-mail
@@ -84,9 +84,9 @@ This doesn't establish maliciousness by itself. However the sender SMTP address 
 
 ### Attachments
 
-After the initial sender and domain investigation, I checked whether the attachment contain malicious code. I started by searching with the file hash mentioned in the email. and the attachment hash was found malicious with a VirusTotal detection score of 36/62. This provided strong evidence that the attachment was malicious.
+After the initial sender and domain investigation, I checked whether the attachment contain malicious code. I started by searching with the file hash mentioned in the email and the attachment hash was found malicious with a VirusTotal detection score of 36/62. This provided strong evidence that the attachment was malicious.
  
-- File Type:       MS PowerPoint Presentation 
+- File Type:       MS PowerPoint,Excel,Presentation 
 - Attachment MD5:  c9ad9506bcccfaa987ff9fc11b91698d
 
 [PPT](./screenshots/virustotal%201.png)
