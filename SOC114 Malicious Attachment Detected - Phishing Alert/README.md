@@ -15,7 +15,7 @@
 
 ### Summary
 
-This investigation started with an alert. The alert type was a phishing email reported after recieved by a user with an attachment.I analyzed the sender information and attachment to determine whether the email was malicious. Based on the evidence, the email was confirmed to be malicious and contained a malicious attachment.
+This investigation started with an alert. The alert type was a phishing email reported after recieved by a user with an attachment.I analyzed the sender information and attachment to determine whether the email was malicious. Based on the evidence, the email was confirmed to be malicious and contained a malicious code.
 
 
 ### E-mail
