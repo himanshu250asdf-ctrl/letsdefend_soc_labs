@@ -132,7 +132,7 @@ http://andaluciabeach.net/image/network.exe
 
 ### Yara Rule
 
-rule autogen_xlsx_Evasive_44e65a64
+'''rule autogen_xlsx_Evasive_44e65a64
 {
  meta:
   author = "FileScan.IO (http://FileScan.IO/) Engine v1.1.0-e153fde"
@@ -158,7 +158,7 @@ rule autogen_xlsx_Evasive_44e65a64
  condition:
   //require 75% of optional strings
   $magicBytes at 0 and filesize > 1996647 and filesize < 2440345 and all of ($req*) and 3 of ($opt*)
-}
+}'''
 
 ### YARA Analysis
 
