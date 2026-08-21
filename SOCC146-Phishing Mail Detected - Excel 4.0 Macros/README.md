@@ -165,7 +165,8 @@ IP	               Detections	Autonomous System	Country
         $s14 = "document created in earlier version of microsoft office" ascii nocase
     condition:
         (uint16(0) == 0xcfd0 or uint32(0) == 0x74725c7b or uint32(0) == 0x46445025 or uint32(0) == 0x6d783f3c) and 2 of them
-}'''
+}
+'''
 
 
 ### YARA Analysis
