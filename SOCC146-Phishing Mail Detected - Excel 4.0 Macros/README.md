@@ -78,7 +78,7 @@ Attachments
 
 A DMARC record was not discovered, which stops the domain from employing DMARC-based authentication and could increase the likelihood of domain spoofing. Yet this result does not mean that the email in question is phishing or malicious.
 
-## Note: This is a personal investigation that has been carried out using the information given in the Let'sDefend lab, with additional OSINT research carried out in order to show the methodology of the investigation. Some of the OSINT findings may not correspond directly to or be linked with the specific indicators involved in the lab's alert and should therefore be regarded as investigative rather than as confirmed evidence of the incident. The aim of this report is to illustrate a practical approach to investigating phishing alerts and to the analysis of alerts and malicious activity.
+**Note: This is a personal investigation that has been carried out using the information given in the Let'sDefend lab, with additional OSINT research carried out in order to show the methodology of the investigation. Some of the OSINT findings may not correspond directly to or be linked with the specific indicators involved in the lab's alert and should therefore be regarded as investigative rather than as confirmed evidence of the incident. The aim of this report is to illustrate a practical approach to investigating phishing alerts and to the analysis of alerts and malicious activity.**
 
 ### Attachments
 
