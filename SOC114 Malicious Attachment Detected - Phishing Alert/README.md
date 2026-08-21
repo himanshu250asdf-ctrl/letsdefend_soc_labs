@@ -80,7 +80,7 @@ This doesn't establish maliciousness by itself. However the sender SMTP address 
 
 [IP](./screenshots/virusttotal_ip.png)
 
-## Note: This is a personal investigation based on the information provided in the Let'sDefend lab. Additional OSINT research was performed to demonstrate the investigation methodology. Some OSINT findings may not directly correspond to or be associated with the specific indicators involved in the lab's alert and these findings should be considered investigative rather than confirmed evidence of the incident. The purpose of this report is to demonstrate a practical methodology for investigating phishing alerts and analyzing alerts and malicious activity.
+**Note: This is a personal investigation based on the information provided in the Let'sDefend lab. Additional OSINT research was performed to demonstrate the investigation methodology. Some OSINT findings may not directly correspond to or be associated with the specific indicators involved in the lab's alert and these findings should be considered investigative rather than confirmed evidence of the incident. The purpose of this report is to demonstrate a practical methodology for investigating phishing alerts and analyzing alerts and malicious activity.**
 
 ### Attachments
 
@@ -158,7 +158,8 @@ http://andaluciabeach.net/image/network.exe
  condition:
   //require 75% of optional strings
   $magicBytes at 0 and filesize > 1996647 and filesize < 2440345 and all of ($req*) and 3 of ($opt*)
-}'''
+}
+'''
 
 ### YARA Analysis
 
