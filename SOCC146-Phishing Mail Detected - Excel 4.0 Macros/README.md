@@ -20,12 +20,12 @@
 The investigation began with a warning. The type of warning was a phishing email that had been reported after a user received it together with an attachment. I examined the details of the sender and the attachment in order to find out whether the email was malicious or not, and on the basis of the evidence in question the email was confirmed to be malicious and was found to contain malicious code.
 
 ### E-mail
-From:                       trenton@tritowncomputers.com
-To:                         lars@letsdefend.io
-Subject:                    RE: Meeting Notes
-Sender IP:                  24.213.228.54
-Date:                       2021-06-13 16:41:18
-Action:                     Unknown
+- From:                       trenton@tritowncomputers.com
+- To:                         lars@letsdefend.io
+- Subject:                    RE: Meeting Notes
+- Sender IP:                  24.213.228.54
+- Date:                       2021-06-13 16:41:18
+- Action:                     Unknown
 
 Hello! Please inspect your docs as one document that you can find through the attachment.
 Attachments
@@ -37,14 +37,14 @@ Attachments
 
 ### Host Information
 
-Hostname:            LarsPRD
-Domain:              letsdefend.local
-IP Address:          172.16.17.57
-Bit Level:           64-bit
-OS:                  Windows 10
-Primary User:        Lars
-Client/Server:       Server
-Last Login:          2021-06-13 17:17:53
+- Hostname:            LarsPRD
+- Domain:              letsdefend.local
+- IP Address:          172.16.17.57
+- Bit Level:           64-bit
+= OS:                  Windows 10
+- Primary User:        Lars
+- Client/Server:       Server
+- Last Login:          2021-06-13 17:17:53
 
 [Host](./screenshots/host.png)
 
@@ -52,25 +52,25 @@ Last Login:          2021-06-13 17:17:53
 
 ### SMTP Address
 
-ISP:	            Charter Communications Inc
-Usage Type:         Fixed Line ISP
-ASN:	            AS11351
-Hostname(s):	    syn-024-213-228-054.biz.spectrum.com
-Domain Name:	    charter.com
-Country:	        United States of America
-City:	            Cobleskill, New York
-Organization:       Charter Communications Inc (CC-3517)
-OrgTechPhone:       +1-866-248-7662 
-OrgTechEmail:       email@charter.com
+- ISP:	            Charter Communications Inc
+- Usage Type:         Fixed Line ISP
+- ASN:	            AS11351
+- Hostname(s):	    syn-024-213-228-054.biz.spectrum.com
+- Domain Name:	    charter.com
+- Country:	        United States of America
+- City:	            Cobleskill, New York
+- Organization:       Charter Communications Inc (CC-3517)
+- OrgTechPhone:       +1-866-248-7662 
+- OrgTechEmail:       email@charter.com
 
 [SMTP](./screenshots/smtp.png)
 
 ### Domain
 
-Hostname:                      mail.tritowncomputers.com
-IP Address:                    50.6.153.1429(Oracle Corporation (AS31898))		    
-DMARC Record Published:	       No DMARC Record found
-DMARC Policy Not Enabled:      It is recommended to use a quarantine or reject policy.
+- Hostname:                      mail.tritowncomputers.com
+- IP Address:                    50.6.153.1429(Oracle Corporation (AS31898))		    
+- DMARC Record Published:	       No DMARC Record found
+- DMARC Policy Not Enabled:      It is recommended to use a quarantine or reject policy.
 
 [Domain](./screenshots/domain.png)
 
@@ -103,7 +103,7 @@ Scanned	     Detections	    Status	URL
 ### Contacted IP addresses
 
 IP	               Detections	Autonomous System	Country
-192.232.219.67	   1/ 91        31898	             US
+- 192.232.219.67	   1/ 91        31898	             US
 
 - 151.139.128.14	
 - 188.209.214.83	
@@ -142,7 +142,7 @@ IP	               Detections	Autonomous System	Country
 
 ### Yara Rule
 
-rule INDICATOR_DOC_PhishingPatterns 
+'''rule INDICATOR_DOC_PhishingPatterns 
 {
     meta:
         author = "ditekSHen"
@@ -165,7 +165,7 @@ rule INDICATOR_DOC_PhishingPatterns
         $s14 = "document created in earlier version of microsoft office" ascii nocase
     condition:
         (uint16(0) == 0xcfd0 or uint32(0) == 0x74725c7b or uint32(0) == 0x46445025 or uint32(0) == 0x6d783f3c) and 2 of them
-}
+}'''
 
 
 ### YARA Analysis
