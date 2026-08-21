@@ -165,6 +165,8 @@ rule autogen_xlsx_Evasive_44e65a64
 The YARA rule identifies an OLE Compound File based on the CDFV2 magic bytes and checks for encryption-related Office strings. The rule also requires a specific GUID and a file size within the defined range.
 The rule is tagged as `evasive`, but it is marked as a weak rule (`isWeakRule = true`). Therefore, the YARA match should be treated as supporting evidence rather than standalone proof of maliciousness.
 
+*Note* YARA Analysis by AI
+
 ## Client-Side Impact & Attack Chain
 
 ### Attack Flow
