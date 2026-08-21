@@ -1,31 +1,97 @@
-# Phishing Email Analysis
-Phishing Email Analysis involves the systematic examination of emails suspected to be fraudulent to identify and mitigate cybersecurity threats. This process includes scrutinizing the email's content, sender details, and technical markers for signs of deception or malicious intent. Analysts look for common phishing techniques such as spoofed email addresses, urgent or threatening language, and suspicious attachments or links. Advanced methods may involve analyzing metadata and deploying machine learning algorithms to detect subtle patterns indicative of phishing. The goal is to protect sensitive information by understanding the tactics used by cybercriminals, thereby enhancing an organization's email security protocols and user awareness.
+SOC Labs — LetsDefend
 
-## What I Practice
-- Phishing email analysis
-- Email header analysis
-- Sender/domain investigation
-- URL and attachment analysis
-- IOC extraction
-- SPF, DKIM and DMARC analysis
-- Threat intelligence research
-- Alert triage
-- Incident classification
+SOC analyst labs conducted on the platform of LetsDefend, consisting of analyzing security alerts, investigating suspicious elements, analyzing evidence, and mapping attacker techniques in accordance with MITRE ATT&CK framework.
+
+Objectives
+
+- Analysis of security alerts from the point of view of SOC analyst
+- Investigation of suspicious emails, files, domains, IP addresses, and URLs
+- Indicators of compromise detection
+- Evidence correlation from different security tools
+- Mapping of attacker's actions with the help of MITRE ATT&CK techniques
+  Investigation Workflow
+
+Each investigation proceeds using the following steps:
+
+1. Alert Triage
+
+	- Analyzing the alert to determine its severity
+	- Finding out who was the target of the alert, be it user, host, or asset
+
+2. Evidence Gathering
+
+	- Reviewing the emails, their headers, attachments, links (URLs), IP addresses and domain names
+	- Identifying IOCs
+
+3. IOC Investigation
+
+	- Performing WHOIS and DNS analysis
+	- Checking the domains and IPs against the threat intelligence databases
+	- Analyzing file hashes and suspicious attachments
+
+4. Threat Analysis
+
+	- Deciding on the nature of the activity, that is whether it is malicious, suspicious or benign
+	- Identifying the attack vector
+
+5. MITRE ATT&CK Techniques Mapping
+
+	- Mapping attacker’s activities to MITRE ATT&CK techniques
+
+6. Conclusion
+
+	- Providing conclusions about the investigation
+	- Documenting the evidence and conclusions reached by the analyst
+	- Recommending further actions
+
+Tools & Technologies
+
+- LetsDefend
+- VirusTotal
+- WHOIS
+- DNS / MXToolbox
+- CyberChef
+- MITRE ATT&CK
+- Email Header Analysis
+- Threat Intelligence
+- IOC Analysis
+
+Repository Structure
+
+LetsDefend-SOC-Labs/
+│
+├── README.md
+│
+├── LAB/
+│   ├── README.md
+│   └── screeenshots
+│
+├── LAB/
+│   ├── README.md
+│   └── screeenshots
+│
+├── LAB/
+│   ├── README.md
+│   └── screeenshots
+
+Reports
+
+Each lab contains a detailed investigation report covering:
+
+- Alert information
+- Incident summary
+- Evidence
+- Indicators of compromise
+- Investigation steps
+- Threat intelligence findings
 - MITRE ATT&CK mapping
+- Analyst conclusion
+- Recommended actions
 
-## Investigations
-- SOC167-LS Command Detected in Requested URL
-- SOC166-Javascript Code Detected in Requested URL
-- SOC165-Possible SQL Injection Payload Detected
-- SOC114-Malicious Attachment Detected - Phishing Alert
-- SOC168-Whoami Command Detected in Request Body
-- SOC120-Phishing Mail Detected - Internal to Internal
-- SOC146-Phishing Mail Detected - Excel 4.0 Macros
-- SOC141-Phishing URL Detected
-- SOC140-Phishing Mail Detected task scheduler
+Disclaimer
 
-More investigations will be added as I progress.
+All investigations documented in this repository were performed in authorized training environments for educational purposes. No unauthorized systems or real-world targets were accessed.
 
-## Disclaimer
+Progress
 
-All investigations were performed in authorized cybersecurity training environments for educational purposes.
+This repository is continuously updated as additional SOC labs and investigations are completed.
